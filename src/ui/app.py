@@ -4,6 +4,7 @@ import os
 import sys
 import tblite.interface as tb
 
+
 class MainApp(QApplication):
     def __init__(self, args):
         super().__init__(args)
