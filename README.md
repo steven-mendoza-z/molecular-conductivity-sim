@@ -1,10 +1,21 @@
 # molecular-conductivity-sim
 
-conda env export --from-history > environment.yml
+## Dev setup
+```bash
+conda create -n <nombredevenv> python=3.13
 
-Luego instala las dependencias de pip con:
+conda activate <nombredevenv>
+
+conda install -c conda-forge tblite-python
 
 pip install -r requirements.txt
+```
+
+
+
+
+# Dev push
+conda env export --from-history > environment.yml
 
 ## Available parameters
 {
