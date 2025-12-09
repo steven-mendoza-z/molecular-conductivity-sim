@@ -1,13 +1,12 @@
 """
 Entry point for the application.
 """
-import src.ui.main_window as main_window
+import src.ui.app as app
 
 def main():
-    app = main_window.QApplication([])
-    window = main_window.MainWindow()
-    window.show()
-    app.exec()
+    app_instance = app.MainApp([])
+
+    app_instance.run_app()
     
 
 if __name__ == "__main__":
